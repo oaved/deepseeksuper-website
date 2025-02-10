@@ -6,7 +6,7 @@ export default function Privacy() {
     return (
         <div>
             <Header />
-            <div className="min-h-screen flex items-center justify-center bg-neutral-200 p-6">
+            <div className="min-h-screen flex items-center justify-center p-6">
                 <div className="card w-full max-w-4xl bg-base-100 shadow-xl p-8">
                     <div className="card-body space-y-6">
                         <h2 className="card-title text-center text-3xl font-bold">Privacy Policy</h2>

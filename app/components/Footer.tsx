@@ -13,11 +13,11 @@ export default function Footer() {
 
     return (
         <div>
-            <footer className="footer bg-neutral-600 flex justify-around p-10">
+            <footer className="footer bg-neutral flex justify-around p-10">
                 <aside>
                     <img src="/dss-icon-380-transparent-bg.png" alt="deepseeksuper logo" className='w-[10rem]' />
                 </aside>
-                <nav className='text-neutral-100'>
+                <nav>
                     <h6 className="footer-title">Links</h6>
                     <a onClick={() => redirect("/")} className="link link-hover">Home</a>
                     <a onClick={() => redirect("privacy")} className="link link-hover">Privacy Policy</a>

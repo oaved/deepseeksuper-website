@@ -20,7 +20,9 @@ export default {
   ],
   daisyui: {
     themes: [
-      "fantasy"
-    ]
+      "nord",
+      "night"
+    ],
+    darkTheme: "night"
   },
 } satisfies Config;
