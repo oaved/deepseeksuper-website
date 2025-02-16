@@ -1,8 +1,17 @@
+"use client";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
+  const redirect = (link: string) => {
+    router.push(link);
+  }
+
   return (
     <div>
       <Header />
@@ -27,7 +36,7 @@ export default function Home() {
               Easily create new folders to organize your conversations efficiently.
               Our simple interface lets you keep everything neat and accessible.
             </p>
-            <button className="btn btn-accent mt-6">Learn More</button>
+            <button onClick={() => redirect("/about")} className="btn btn-secondary mt-6">Learn More</button>
           </div>
         </div>
       </section>
@@ -51,7 +60,7 @@ export default function Home() {
               Seamlessly add your conversations to your folders with a few clicks.
               Keep your chats organized and easy to find whenever you need them.
             </p>
-            <button className="btn btn-accent mt-6">Learn More</button>
+            <button onClick={() => redirect("/about")} className="btn btn-secondary mt-6">Learn More</button>
           </div>
         </div>
       </section>
@@ -75,7 +84,7 @@ export default function Home() {
               Stay productive by managing your folders and conversations all in one place.
               Streamline your workflow and enjoy a clutter-free digital workspace.
             </p>
-            <button className="btn btn-accent mt-6">Learn More</button>
+            <button onClick={() => redirect("/about")} className="btn btn-secondary mt-6">Learn More</button>
           </div>
         </div>
       </section>

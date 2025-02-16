@@ -1,6 +1,11 @@
+"use cient";
 import React from 'react'
 
 export default function Hero() {
+    const toChromeWebstore = () => {
+        window.open('https://chromewebstore.google.com/detail/deepseeksuper/ifakidpnjchifdpplbihnalcbdkmdgkj', '_blank');
+    };
+
     return (
         <div className="hero bg-base-200 py-20">
             <div className="hero-content flex-col gap-20 lg:flex-row-reverse">
@@ -12,7 +17,7 @@ export default function Hero() {
                     <p className="py-6 text-lg">
                         Seamless Google Chrome Extension for organizing your deepseek conversations without ruining the minimalistic clean interface.
                     </p>
-                    <button className="btn btn-secondary">Get Started</button>
+                    <button onClick={toChromeWebstore} className="btn btn-accent">Add to browser</button>
                 </div>
             </div>
         </div>
