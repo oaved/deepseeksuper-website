@@ -8,7 +8,7 @@ export default function Hero() {
 
     return (
         <div className="hero bg-base-200 py-20">
-            <div className="hero-content flex-col gap-20 lg:flex-row-reverse">
+            <div className="hero-content flex-col px-20 gap-20 lg:flex-row-reverse">
                 <img
                     src="dss-icon-380-transparent-bg.png"
                     className="w-full max-w-sm rounded-lg" />

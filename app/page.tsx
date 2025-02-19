@@ -23,7 +23,7 @@ export default function Home() {
           {/* Image Section */}
           <div className="w-full lg:w-1/2">
             <img
-              src="New Folder Screenshot.png"
+              src="dss-create-folder.png"
               alt="Create folders screenshot"
               className="w-full rounded-lg shadow-2xl"
             />
@@ -47,7 +47,7 @@ export default function Home() {
           {/* Image Section */}
           <div className="w-full lg:w-1/2">
             <img
-              src="Add to Folder Screenshot.png"
+              src="dss-add-to-folder.png"
               alt="Add conversations screenshot"
               className="w-full rounded-lg shadow-2xl"
             />
@@ -71,7 +71,7 @@ export default function Home() {
           {/* Image Section */}
           <div className="w-full lg:w-1/2">
             <img
-              src="Folder Management Screenshot.png"
+              src="dss-folder-management.png"
               alt="Manage workflow screenshot"
               className="w-full rounded-lg shadow-2xl"
             />
