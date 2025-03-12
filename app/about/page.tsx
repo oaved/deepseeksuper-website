@@ -13,32 +13,101 @@ export default function About() {
   return (
     <div>
       <Header />
-      <div className="bg-base-300 p-16">
-        <div className="max-w-2xl mx-auto p-8 bg-base-100 rounded-lg shadow-md">
-          <h2 className="text-2xl text-center mb-8 font-semibold mb-2">
-            DeepSeekSuper – Enhance Your DeepSeek Chat Experience
-          </h2>
-          <p className="text-md mb-6">
-            DeepSeekSuper streamlines your DeepSeek Chat by letting you organize your conversations into custom folders.
-            Easily create, manage, and navigate your chats with a few clicks—all integrated directly into your chat interface.
-          </p>
-          <div className="bg-base-100 p-6 rounded-lg shadow-inner">
-            <h3 className="text-lg font-bold mb-4">Key Features:</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li><span className="font-semibold">Custom Folders:</span> Group chats by topic, project, or priority.</li>
-              <li><span className="font-semibold">Seamless Integration:</span> Enjoy an intuitive sidebar that fits naturally into DeepSeek Chat.</li>
-              <li><span className="font-semibold">Effortless Management:</span> Quickly add or remove conversations using simple dropdown menus.</li>
-              <li><span className="font-semibold">Persistent Storage:</span> Your organized layout stays saved across sessions.</li>
-            </ul>
+      <section className="py-20 bg-base-100">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-6">
+          {/* Image Section */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src="dss-create-folder.png"
+              alt="Create folders screenshot"
+              className="w-full rounded-lg shadow-2xl"
+            />
           </div>
-          <p className="text-md mt-6 font-semibold">
-            Transform your chat experience—install DeepSeekSuper today and keep your conversations neatly organized!
-          </p>
-          <div className="flex justify-center mt-10">
-            <button onClick={toChromeWebstore} className="btn btn-accent">Add to browser</button>
+
+          {/* Text Section */}
+          <div className="w-full lg:w-1/2 px-8">
+            <h2 className="text-4xl font-bold mb-4">Create folders</h2>
+            <p className="text-lg">
+              Easily create new folders to organize your conversations efficiently.
+              Our simple interface lets you keep everything neat and accessible.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* ADD */}
+      <section className="py-20 bg-base-100">
+        <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center gap-10 px-6">
+          {/* Image Section */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src="dss-add-to-folder.png"
+              alt="Add conversations screenshot"
+              className="w-full rounded-lg shadow-2xl"
+            />
+          </div>
+
+          {/* Text Section */}
+          <div className="w-full lg:w-1/2 px-8">
+            <h2 className="text-4xl font-bold mb-4">Add conversations</h2>
+            <p className="text-lg">
+              Seamlessly add your conversations to your folders with a few clicks.
+              Keep your chats organized and easy to find whenever you need them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MANAGE */}
+      <section className="py-20 bg-base-100">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 px-6">
+          {/* Image Section */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src="dss-folder-management.png"
+              alt="Manage workflow screenshot"
+              className="w-full rounded-lg shadow-2xl"
+            />
+          </div>
+
+          {/* Text Section */}
+          <div className="w-full lg:w-1/2 px-8">
+            <h2 className="text-4xl font-bold mb-4">Manage your workflow</h2>
+            <p className="text-lg">
+              Stay productive by managing your folders and conversations all in one place.
+              Streamline your workflow and enjoy a clutter-free digital workspace.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* More */}
+      <section className="py-20 bg-base-100">
+        <div className="container mx-auto flex flex-col items-center gap-10 px-6">
+          {/* Image Section */}
+          <div>
+            <img
+              src="dss-icon-380-transparent-bg.png"
+              alt="More features"
+              className="w-40 rounded-lg shadow-2xl"
+            />
+          </div>
+
+          {/* Text Section */}
+          <div className="text-center">
+            <h2 className="text-4xl font-bold mb-4">And many more features</h2>
+            <p className="text-lg">
+              Stay productive by managing your folders and conversations all in one place.
+              Streamline your workflow and enjoy a clutter-free digital workspace.
+            </p>
+          </div>
+
+          {/* Button */}
+          <button onClick={toChromeWebstore} className="btn btn-primary mt-6">
+            Visit Chrome Webstore
+          </button>
+        </div>
+      </section>
       <Footer />
     </div>
   )

@@ -20,7 +20,7 @@ export default {
   ],
   daisyui: {
     themes: [
-      "nord",
+      "cmyk",
       "night"
     ],
     darkTheme: "night"
